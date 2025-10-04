@@ -5,8 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
-    "build":"npx tailwindcss -i ./src/styles.css -o ./dist/output.css --minify"
+    "copy": "cpx \"src/**/*.{html,js,json,svg}\" dist",
+    "dev": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "init": "^0.1.2",
+    "minify-all": "^1.2.2",
     "npx": "^10.2.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
