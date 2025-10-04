@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos du Générateur</title>
+    
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-md p-4 w-full">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-2xl font-extrabold text-gray-900 tracking-wider">
+                Inspiration Quotidienne
+            </a>
+            
+            <nav>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">
+                    ← Retour au Générateur
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow flex justify-center p-4">
+        <div class="bg-white p-8 md:p-12 rounded-lg shadow-2xl w-full max-w-3xl mt-10">
+            
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-6 border-b-4 border-blue-600 pb-2">
+                À Propos de ce Générateur
+            </h1>
+            
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-3">
+                    Un Projet Simple pour un Apprentissage Solide
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Ce générateur de citations est un projet conçu pour démontrer la maîtrise des fondamentaux du développement web. Son objectif est double : offrir une source rapide d'inspiration, tout en servant de preuve concrète de compétence en **JavaScript pur** (Vanilla JS) et en intégration stylistique moderne.
+                </p>
+            </section>
+
+            <section class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-3 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    Technologies Utilisées
+                </h2>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                    <li>**JavaScript Pur (Vanilla JS) :** Le cœur de l'application. La logique de sélection aléatoire et la mise à jour de l'affichage (Manipulation du DOM via `document.getElementById` et `textContent`) sont gérées sans l'aide d'aucun framework.</li>
+                    <li>**Tailwind CSS :** Utilisé pour le design, la réactivité et le style de la carte et du bouton. Le processus de *build* garantit que le CSS final est purgé et minifié.</li>
+                    <li>**Hébergement :** Déployé via Netlify, assurant un déploiement continu et des performances optimisées.</li>
+                </ul>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-3">
+                    Comment les Citations Sont-elles Générées ?
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Toutes les citations sont stockées dans un **tableau d'objets JavaScript** au sein du fichier `script.js`. Lorsque vous cliquez sur le bouton, le script :
+                    <ol class="list-decimal list-inside text-gray-600 mt-2 pl-4">
+                        <li>Calcule un index aléatoire (`Math.random()`).</li>
+                        <li>Sélectionne la citation correspondante dans le tableau.</li>
+                        <li>Met à jour les éléments HTML correspondants en temps réel.</li>
+                    </ol>
+                    Aucune API externe n'est utilisée, ce qui rend l'application ultra-rapide et totalement indépendante.
+                </p>
+            </section>
+            
+        </div>
+    </main>
+
+    <footer class="text-center py-4 text-gray-500 text-sm">
+        Projet développé avec amour.
+    </footer>
+
+</body>
+</html>
