@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Citations</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-md p-4 w-full">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-gray-900 tracking-wider">
+                InspirationBox
+            </a>
+            
+            <nav>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium">
+                    À Propos
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        
+        <div id="quote-card" class="bg-white p-8 rounded-lg shadow-2xl w-full max-w-xl">
+            
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">
+                Citations de la Journée
+            </h1>
+
+            <blockquote class="text-2xl font-serif text-gray-800 border-l-4 border-blue-500 pl-4 mb-6 transition-all duration-300">
+                <p id="quote-text" class="italic">
+                    "La première étape pour créer quelque chose est de se lancer. Cliquez pour commencer!"
+                </p>
+            </blockquote>
+            
+            <footer class="text-right text-lg font-semibold text-gray-600">
+                — <span id="quote-author">Prêt à Démarrer</span>
+            </footer>
+            
+            <hr class="my-6 border-gray-200">
+            
+            <div class="text-center">
+                <button id="generate-button" class="card-button-project hover:shadow-lg">
+                    Générer une Nouvelle Citation
+                </button>
+            </div>
+            
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>
