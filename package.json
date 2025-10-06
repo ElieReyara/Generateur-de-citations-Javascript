@@ -5,9 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm install tailwindcss@latest --global", 
     "copy": "cpx \"src/**/*.{html,js,json,svg}\" dist",
     "dev": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch",
-    "build": "npm run copy && npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify"
+    "build": "npm run copy && tailwindcss -i ./src/style.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",
